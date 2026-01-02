@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/authMiddleware');
-const { transcribe } = require('../controllers/transcribeController');
+const { generateScript  } = require('../controllers/youtubeScriptController');
 
-router.post('/transcribe', auth, transcribe);
+router.post('/youtube/script', auth, generateScript );
 
 module.exports = router;
     

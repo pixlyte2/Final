@@ -1,4 +1,0 @@
-yt-dlp
-pydub
-ffmpeg-python
-python-dotenv
